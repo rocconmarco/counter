@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "digital-7";
+    src: url("/font/digital-7.ttf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: digital-7, Helvetica, sans-serif;
+    background: linear-gradient(#EDE8F5, #ADBBDA);
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-container {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 150px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.counter-display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 90px;
+    background-color: aliceblue;
+    height: 85%;
+    width: 60%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.counter-add {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 160px;
+    background-color: antiquewhite;
+    height: 85%;
+    width: 20%;
+    margin-right: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.counter-decrease {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 160px;
+    background-color: cornsilk;
+    height: 85%;
+    width: 20%;
+    margin-right: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
