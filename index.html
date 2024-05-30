@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,31 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
-    <div class="counter-container">
-        <div class="counter-display">0</div>
-        <div class="counter-add">+</div>
-        <div class="counter-decrease">-</div>
+    <div class="ombra">
+        <div class="counter-container">
+            <div class="counter-display">
+                <div class="current-counter" updated-counter></div>
+            </div>
+            <button class="counter-increase" increase-button>+</button>
+            <button class="counter-decrease" decrease-button>-</button>
+        </div>
+    </div>
+
+    <div class="popup" popup-42>
+        <img src="img/42.svg" alt="">
+        <h2>Il senso della vita</h2>
+        <p>Non tutti sanno dove andare, ma la strada è ancora lunga!</p>
+        <button class="continue-counting" continue-counting>Continua a contare</button>
+    </div>
+
+    <div class="popup" popup-73>
+        <img src="img/73.png" alt="">
+        <h2>Sheldon Cooper</h2>
+        <p>Non tutti sanno che il numero perfetto è il 73! Lo conferma il migliore</p>
+        <button class="continue-counting" continue-counting>Continua a contare</button>
     </div>
 </body>
+
 </html>
