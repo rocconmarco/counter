@@ -70,128 +70,79 @@ function resizeDisplay() {
 }
 
 increaseButton.addEventListener('click', () => {
-    counter++
-    currentCounter.innerHTML = counter
-    resizeDisplay()
+    if (counter < 99999999) {
+        counter++
+        currentCounter.innerHTML = counter
+        resizeDisplay()
 
-    if (counter === 42) {
-        popup42.classList.add('active')
-        trophy42.classList.add('visible')
-        brightTitle.style.visibility = 'visible'
+        if (counter === 42) {
+            popup42.classList.add('active')
+            trophy42.classList.add('visible')
+            brightTitle.style.visibility = 'visible'
+        }
 
-        continueCounting.addEventListener('click', () => {
-            popup42.classList.remove('active');
-        });
-    }
+        if (counter === 73) {
+            popup73.classList.add('active')
+            trophy73.classList.add('visible')
+        }
 
-    if (counter === 73) {
-        popup73.classList.add('active')
-        trophy73.classList.add('visible')
+        if (counter === 101) {
+            popup101.classList.add('active')
+            trophy101.classList.add('visible')
+        }
 
-        continueCounting.addEventListener('click', () => {
-            popup73.classList.remove('active');
-        });
-    }
+        if (counter === 144) {
+            popup144.classList.add('active')
+            trophy144.classList.add('visible')
+        }
 
-    if (counter === 101) {
-        popup101.classList.add('active')
-        trophy101.classList.add('visible')
+        if (counter === 256) {
+            popup256.classList.add('active')
+            trophy256.classList.add('visible')
+        }
 
-        continueCounting.addEventListener('click', () => {
-            popup101.classList.remove('active');
-        });
-    }
+        if (counter === 777) {
+            popup777.classList.add('active')
+            trophy777.classList.add('visible')
+        }
 
-    if (counter === 144) {
-        popup144.classList.add('active')
-        trophy144.classList.add('visible')
+        if (counter === 934) {
+            popup934.classList.add('active')
+            trophy934.classList.add('visible')
+        }
 
-        continueCounting.addEventListener('click', () => {
-            popup144.classList.remove('active');
-        });
-    }
+        if (counter === 1234) {
+            popup1234.classList.add('active')
+            trophy1234.classList.add('visible')
+        }
 
-    if (counter === 256) {
-        popup256.classList.add('active')
-        trophy256.classList.add('visible')
+        if (counter === 2024) {
+            popup2024.classList.add('active')
+            trophy2024.classList.add('visible')
+        }
 
-        continueCounting.addEventListener('click', () => {
-            popup256.classList.remove('active');
-        });
-    }
+        if (counter === 8848) {
+            popup8848.classList.add('active')
+            trophy8848.classList.add('visible')
+        }
 
-    if (counter === 777) {
-        popup777.classList.add('active')
-        trophy777.classList.add('visible')
+        if (counter === 21000000) {
+            popup21000000.classList.add('active')
+            trophy21000000.classList.add('visible')
+        }
 
-        continueCounting.addEventListener('click', () => {
-            popup777.classList.remove('active');
-        });
-    }
+        if (counter === 88888888) {
+            popup88888888.classList.add('active')
+            trophy88888888.classList.add('visible')
+        }
 
-    if (counter === 934) {
-        popup934.classList.add('active')
-        trophy934.classList.add('visible')
-
-        continueCounting.addEventListener('click', () => {
-            popup934.classList.remove('active');
-        });
-    }
-
-    if (counter === 1234) {
-        popup1234.classList.add('active')
-        trophy1234.classList.add('visible')
-
-        continueCounting.addEventListener('click', () => {
-            popup1234.classList.remove('active');
-        });
-    }
-
-    if (counter === 2024) {
-        popup2024.classList.add('active')
-        trophy2024.classList.add('visible')
-
-        continueCounting.addEventListener('click', () => {
-            popup2024.classList.remove('active');
-        });
-    }
-
-    if (counter === 8848) {
-        popup8848.classList.add('active')
-        trophy8848.classList.add('visible')
-
-        continueCounting.addEventListener('click', () => {
-            popup8848.classList.remove('active');
-        });
-    }
-
-    if (counter === 21000000) {
-        popup21000000.classList.add('active')
-        trophy21000000.classList.add('visible')
-
-        continueCounting.addEventListener('click', () => {
-            popup21000000.classList.remove('active');
-        });
-    }
-
-    if (counter === 88888888) {
-        popup88888888.classList.add('active')
-        trophy88888888.classList.add('visible')
-
-        continueCounting.addEventListener('click', () => {
-            popup88888888.classList.remove('active');
-        });
-    }
-
-    if (counter === 99999999) {
-        popup99999999.classList.add('active')
-        trophy99999999.classList.add('visible')
-
-        continueCounting.addEventListener('click', () => {
-            popup99999999.classList.remove('active');
-        });
+        if (counter === 99999999) {
+            popup99999999.classList.add('active')
+            trophy99999999.classList.add('visible')
+        }
     }
 })
+
 
 decreaseButton.addEventListener('click', () => {
     if (counter > -99999999) {
@@ -204,83 +155,46 @@ decreaseButton.addEventListener('click', () => {
             popupMinus13.classList.add('active')
             trophyMinus13.classList.add('visible')
             darkTitle.style.visibility = 'visible'
-
-            continueCounting.addEventListener('click', () => {
-                popupMinus13.classList.remove('active');
-            });
         }
 
         if (counter === -273) {
             popupMinus273.classList.add('active')
             trophyMinus273.classList.add('visible')
-
-            continueCounting.addEventListener('click', () => {
-                popupMinus273.classList.remove('active');
-            });
         }
 
         if (counter === -404) {
             popupMinus404.classList.add('active')
             trophyMinus404.classList.add('visible')
-
-            continueCounting.addEventListener('click', () => {
-                popupMinus404.classList.remove('active');
-            });
         }
 
         if (counter === -666) {
             popupMinus666.classList.add('active')
             trophyMinus666.classList.add('visible')
-
-            continueCounting.addEventListener('click', () => {
-                popupMinus666.classList.remove('active');
-            });
         }
 
         if (counter === -1984) {
             popupMinus1984.classList.add('active')
             trophyMinus1984.classList.add('visible')
-
-            continueCounting.addEventListener('click', () => {
-                popupMinus1984.classList.remove('active');
-            });
         }
 
         if (counter === -2020) {
             popupMinus2020.classList.add('active')
             trophyMinus2020.classList.add('visible')
-
-            continueCounting.addEventListener('click', () => {
-                popupMinus2020.classList.remove('active');
-            });
         }
 
         if (counter === -10920) {
             popupMinus10920.classList.add('active')
             trophyMinus10920.classList.add('visible')
-
-            continueCounting.addEventListener('click', () => {
-                popupMinus10920.classList.remove('active');
-            });
         }
 
         if (counter === -66000000) {
             popupMinus66000000.classList.add('active')
             trophyMinus66000000.classList.add('visible')
-
-            continueCounting.addEventListener('click', () => {
-                popupMinus66000000.classList.remove('active');
-            });
         }
 
         if (counter === -99999999) {
             popupMinus99999999.classList.add('active')
             trophyMinus99999999.classList.add('visible')
-
-            continueCounting.addEventListener('click', () => {
-                popupMinus99999999.classList.remove('active');
-            });
-
         }
     }
 })
@@ -320,3 +234,91 @@ resetCounting.forEach(button => {
         popupMinus99999999.classList.remove('active');
     })
 });
+
+trophy42.addEventListener('click', () => {
+    popup42.classList.add('active')
+})
+
+trophy73.addEventListener('click', () => {
+    popup73.classList.add('active')
+})
+
+trophy101.addEventListener('click', () => {
+    popup101.classList.add('active')
+})
+
+trophy144.addEventListener('click', () => {
+    popup144.classList.add('active')
+})
+
+trophy256.addEventListener('click', () => {
+    popup256.classList.add('active')
+})
+
+trophy777.addEventListener('click', () => {
+    popup777.classList.add('active')
+})
+
+trophy934.addEventListener('click', () => {
+    popup934.classList.add('active')
+})
+
+trophy1234.addEventListener('click', () => {
+    popup1234.classList.add('active')
+})
+
+trophy2024.addEventListener('click', () => {
+    popup2024.classList.add('active')
+})
+
+trophy8848.addEventListener('click', () => {
+    popup8848.classList.add('active')
+})
+
+trophy21000000.addEventListener('click', () => {
+    popup21000000.classList.add('active')
+})
+
+trophy88888888.addEventListener('click', () => {
+    popup88888888.classList.add('active')
+})
+
+trophy99999999.addEventListener('click', () => {
+    popup99999999.classList.add('active')
+})
+
+trophyMinus13.addEventListener('click', () => {
+    popupMinus13.classList.add('active')
+})
+
+trophyMinus273.addEventListener('click', () => {
+    popupMinus273.classList.add('active')
+})
+
+trophyMinus404.addEventListener('click', () => {
+    popupMinus404.classList.add('active')
+})
+
+trophyMinus666.addEventListener('click', () => {
+    popupMinus666.classList.add('active')
+})
+
+trophyMinus1984.addEventListener('click', () => {
+    popupMinus1984.classList.add('active')
+})
+
+trophyMinus2020.addEventListener('click', () => {
+    popupMinus2020.classList.add('active')
+})
+
+trophyMinus10920.addEventListener('click', () => {
+    popupMinus10920.classList.add('active')
+})
+
+trophyMinus66000000.addEventListener('click', () => {
+    popupMinus66000000.classList.add('active')
+})
+
+trophyMinus99999999.addEventListener('click', () => {
+    popupMinus99999999.classList.add('active')
+})
