@@ -52,8 +52,6 @@ let brightTitle = document.querySelector('[bright-title]')
 let darkTitle = document.querySelector('[dark-title]')
 
 
-
-
 let counter = 0
 currentCounter.innerHTML = counter
 
@@ -75,70 +73,60 @@ increaseButton.addEventListener('click', () => {
         currentCounter.innerHTML = counter
         resizeDisplay()
 
-        if (counter === 42) {
-            popup42.classList.add('active')
-            trophy42.classList.add('visible')
-            brightTitle.style.visibility = 'visible'
-        }
-
-        if (counter === 73) {
-            popup73.classList.add('active')
-            trophy73.classList.add('visible')
-        }
-
-        if (counter === 101) {
-            popup101.classList.add('active')
-            trophy101.classList.add('visible')
-        }
-
-        if (counter === 144) {
-            popup144.classList.add('active')
-            trophy144.classList.add('visible')
-        }
-
-        if (counter === 256) {
-            popup256.classList.add('active')
-            trophy256.classList.add('visible')
-        }
-
-        if (counter === 777) {
-            popup777.classList.add('active')
-            trophy777.classList.add('visible')
-        }
-
-        if (counter === 934) {
-            popup934.classList.add('active')
-            trophy934.classList.add('visible')
-        }
-
-        if (counter === 1234) {
-            popup1234.classList.add('active')
-            trophy1234.classList.add('visible')
-        }
-
-        if (counter === 2024) {
-            popup2024.classList.add('active')
-            trophy2024.classList.add('visible')
-        }
-
-        if (counter === 8848) {
-            popup8848.classList.add('active')
-            trophy8848.classList.add('visible')
-        }
-
-        if (counter === 21000000) {
-            popup21000000.classList.add('active')
-            trophy21000000.classList.add('visible')
-        }
-
-        if (counter === 88888888) {
-            popup88888888.classList.add('active')
-            trophy88888888.classList.add('visible')
-        }
-
-        if (counter === 99999999) {
-            popup99999999.classList.add('active')
-            trophy99999999.classList.add('visible')
+        switch (counter) {
+            case 42:
+                popup42.classList.add('active');
+                trophy42.classList.add('visible');
+                brightTitle.style.visibility = 'visible';
+                break;
+            case 73:
+                popup73.classList.add('active');
+                trophy73.classList.add('visible');
+                break;
+            case 101:
+                popup101.classList.add('active');
+                trophy101.classList.add('visible');
+                break;
+            case 144:
+                popup144.classList.add('active');
+                trophy144.classList.add('visible');
+                break;
+            case 256:
+                popup256.classList.add('active');
+                trophy256.classList.add('visible');
+                break;
+            case 777:
+                popup777.classList.add('active');
+                trophy777.classList.add('visible');
+                break;
+            case 934:
+                popup934.classList.add('active');
+                trophy934.classList.add('visible');
+                break;
+            case 1234:
+                popup1234.classList.add('active');
+                trophy1234.classList.add('visible');
+                break;
+            case 2024:
+                popup2024.classList.add('active');
+                trophy2024.classList.add('visible');
+                break;
+            case 8848:
+                popup8848.classList.add('active');
+                trophy8848.classList.add('visible');
+                break;
+            case 21000000:
+                popup21000000.classList.add('active');
+                trophy21000000.classList.add('visible');
+                break;
+            case 88888888:
+                popup88888888.classList.add('active');
+                trophy88888888.classList.add('visible');
+                break;
+            case 99999999:
+                popup99999999.classList.add('active');
+                trophy99999999.classList.add('visible');
+                break;
         }
     }
 })
@@ -151,50 +139,44 @@ decreaseButton.addEventListener('click', () => {
         currentCounter.innerHTML = counter
         resizeDisplay()
 
-        if (counter === -13) {
-            popupMinus13.classList.add('active')
-            trophyMinus13.classList.add('visible')
-            darkTitle.style.visibility = 'visible'
-        }
-
-        if (counter === -273) {
-            popupMinus273.classList.add('active')
-            trophyMinus273.classList.add('visible')
-        }
-
-        if (counter === -404) {
-            popupMinus404.classList.add('active')
-            trophyMinus404.classList.add('visible')
-        }
-
-        if (counter === -666) {
-            popupMinus666.classList.add('active')
-            trophyMinus666.classList.add('visible')
-        }
-
-        if (counter === -1984) {
-            popupMinus1984.classList.add('active')
-            trophyMinus1984.classList.add('visible')
-        }
-
-        if (counter === -2020) {
-            popupMinus2020.classList.add('active')
-            trophyMinus2020.classList.add('visible')
-        }
-
-        if (counter === -10920) {
-            popupMinus10920.classList.add('active')
-            trophyMinus10920.classList.add('visible')
-        }
-
-        if (counter === -66000000) {
-            popupMinus66000000.classList.add('active')
-            trophyMinus66000000.classList.add('visible')
-        }
-
-        if (counter === -99999999) {
-            popupMinus99999999.classList.add('active')
-            trophyMinus99999999.classList.add('visible')
+        switch (counter) {
+            case -13:
+                popupMinus13.classList.add('active');
+                trophyMinus13.classList.add('visible');
+                darkTitle.style.visibility = 'visible';
+                break;
+            case -273:
+                popupMinus273.classList.add('active');
+                trophyMinus273.classList.add('visible');
+                break;
+            case -404:
+                popupMinus404.classList.add('active');
+                trophyMinus404.classList.add('visible');
+                break;
+            case -666:
+                popupMinus666.classList.add('active');
+                trophyMinus666.classList.add('visible');
+                break;
+            case -1984:
+                popupMinus1984.classList.add('active');
+                trophyMinus1984.classList.add('visible');
+                break;
+            case -2020:
+                popupMinus2020.classList.add('active');
+                trophyMinus2020.classList.add('visible');
+                break;
+            case -10920:
+                popupMinus10920.classList.add('active');
+                trophyMinus10920.classList.add('visible');
+                break;
+            case -66000000:
+                popupMinus66000000.classList.add('active');
+                trophyMinus66000000.classList.add('visible');
+                break;
+            case -99999999:
+                popupMinus99999999.classList.add('active');
+                trophyMinus99999999.classList.add('visible');
+                break;
         }
     }
 })
