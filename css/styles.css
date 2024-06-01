@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +14,8 @@
     src: url("/font/digital-7.ttf");
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     background: linear-gradient(#EDE8F5, #ADBBDA);
@@ -151,5 +154,59 @@ html, body {
     cursor: pointer;
     font-size: 18px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+    user-select: none;
+}
 
+.trophies-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 20px;
+    user-select: none;
+    visibility: hidden;
+}
+
+.trophy.visible {
+    visibility: visible;
+}
+
+.trophies-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trophies-container h2 {
+    width: 50%;
+    text-align: center;
+}
+
+
+.trophies-bright-side,
+.trophies-dark-side {
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(7, 65px);
+    grid-template-rows: minmax(120px, auto) repeat(2, 65px);
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 10px;
+}
+
+.trophy {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.trophy p {
+    margin-top: 5px;
+}
+
+.trophy img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
