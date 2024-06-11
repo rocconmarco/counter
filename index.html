@@ -18,279 +18,30 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
+    <script src="js/trophies.js"></script>
 </head>
 
 <body>
     <div class="trophies-container">
         <div class="trophies-section">
             <h2 bright-title>Bright side</h2>
-            <div class="trophies-bright-side">
-                <div class="trophy" trophy-42>
-                    <img src="img/42.svg" alt="">
-                    <p>42</p>
-                </div>
-                <div class="trophy" trophy-73>
-                    <img src="img/73.png" alt="">
-                    <p>73</p>
-                </div>
-                <div class="trophy" trophy-101>
-                    <img src="img/101.svg" alt="">
-                    <p>101</p>
-                </div>
-                <div class="trophy" trophy-144>
-                    <img src="img/144.svg" alt="">
-                    <p>144</p>
-                </div>
-                <div class="trophy" trophy-256>
-                    <img src="img/256.svg" alt="">
-                    <p>256</p>
-                </div>
-                <div class="trophy" trophy-777>
-                    <img src="img/777.svg" alt="">
-                    <p>777</p>
-                </div>
-                <div class="trophy" trophy-934>
-                    <img src="img/934.svg" alt="">
-                    <p>934</p>
-                </div>
-                <div class="trophy" trophy-1234>
-                    <img src="img/1234.svg" alt="">
-                    <p>1234</p>
-                </div>
-                <div class="trophy" trophy-2024>
-                    <img src="img/2024.svg" alt="">
-                    <p>2024</p>
-                </div>
-                <div class="trophy" trophy-8848>
-                    <img src="img/8848.png" alt="">
-                    <p>8848</p>
-                </div>
-                <div class="trophy" trophy-21000000>
-                    <img src="img/21000000.svg" alt="">
-                    <p>21000000</p>
-                </div>
-                <div class="trophy" trophy-88888888>
-                    <img src="img/88888888.svg" alt="">
-                    <p>88888888</p>
-                </div>
-                <div class="trophy" trophy-99999999>
-                    <img src="img/99999999.svg" alt="">
-                    <p>99999999</p>
-                </div>
-            </div>
-
+            <div class="trophies-bright-side"></div>
         </div>
         <div class="trophies-section">
             <h2 dark-title>Dark side</h2>
-            <div class="trophies-dark-side">
-                <div class="trophy" trophy-minus-13>
-                    <img src="img/-13.svg" alt="">
-                    <p>-13</p>
+            <div class="trophies-dark-side"></div>
+        </div>
+
+        <div class="ombra">
+            <div class="counter-container" id="container">
+                <div class="counter-display" id="display">
+                    <div class="current-counter" updated-counter></div>
                 </div>
-                <div class="trophy" trophy-minus-273>
-                    <img src="img/-273.svg" alt="">
-                    <p>-273</p>
-                </div>
-                <div class="trophy" trophy-minus-404>
-                    <img src="img/-404.svg" alt="">
-                    <p>-404</p>
-                </div>
-                <div class="trophy" trophy-minus-666>
-                    <img src="img/-666.svg" alt="">
-                    <p>-666</p>
-                </div>
-                <div class="trophy" trophy-minus-1984>
-                    <img src="img/-1984.svg" alt="">
-                    <p>-1984</p>
-                </div>
-                <div class="trophy" trophy-minus-2020>
-                    <img src="img/-2020.svg" alt="">
-                    <p>-2020</p>
-                </div>
-                <div class="trophy" trophy-minus-10920>
-                    <img src="img/-10920.svg" alt="">
-                    <p>-10920</p>
-                </div>
-                <div class="trophy" trophy-minus-66000000>
-                    <img src="img/-66000000.svg" alt="">
-                    <p>-66000000</p>
-                </div>
-                <div class="trophy" trophy-minus-99999999>
-                    <img src="img/-99999999.svg" alt="">
-                    <p>-99999999</p>
-                </div>
+                <button id="counterIncrease" class="counter-increase" increase-button>+</button>
+                <button id="counterDecrease" class="counter-decrease" decrease-button>-</button>
             </div>
         </div>
 
-    </div>
-
-    <div class="ombra">
-        <div class="counter-container" id="container">
-            <div class="counter-display" id="display">
-                <div class="current-counter" updated-counter></div>
-            </div>
-            <button class="counter-increase" increase-button>+</button>
-            <button class="counter-decrease" decrease-button>-</button>
-        </div>
-    </div>
-
-    <div class="popup" popup-minus-99999999>
-        <img src="img/-99999999.svg" alt="">
-        <h2>Lasciate ogni speranza</h2>
-        <p>Complimenti! Hai raggiunto il livello massimo della dark side. Ora puoi esplorare il regno della luce,
-            resetta il contatore e riprendi a contare</p>
-        <button class="reset-counting" reset-counting>Prova la bright side</button>
-    </div>
-
-    <div class="popup" popup-minus-66000000>
-        <img src="img/-66000000.svg" alt="">
-        <h2>Chicxulub</h2>
-        <p>La distruzione di massa più grande della storia, una storia antica, che ancora ci comunica qualcosa</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-minus-10920>
-        <img src="img/-10920.svg" alt="">
-        <h2>Abisso oceanico</h2>
-        <p>Nel punto più profondo, si nascondono creature misteriose, e con loro tutte le nostre paure più recondite</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-minus-2020>
-        <img src="img/-2020.svg" alt="">
-        <h2>Lockdown</h2>
-        <p>Pericolo, paura, depressione. Un periodo di segregazione, non ti puoi muovere, attenzione al contagio</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-minus-1984>
-        <img src="img/-1984.svg" alt="">
-        <h2>Il controllo</h2>
-        <p>Vivresti in un mondo in cui ogni passo che fai è costantemente monitarato e registrato? La tranquillità della
-            non-scelta, tutte le decisioni vengono prese dall'alto</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-minus-666>
-        <img src="img/-666.svg" alt="">
-        <h2>La bestia</h2>
-        <p>L'antagonista per antonomasia, il male, la parte più oscura di ognuno di noi</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-minus-404>
-        <img src="img/-404.svg" alt="">
-        <h2>File not found</h2>
-        <p>Lo cerchi dappertutto, la certezza è svanita, il passato non esiste più</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-minus-273>
-        <img src="img/-273.svg" alt="">
-        <h2>Zero assoluto</h2>
-        <p>Tutto rallenta, quasi a fermarsi del tutto, in un riposo glaciale </p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-minus-13>
-        <img src="img/-13.svg" alt="">
-        <h2>Superstizione</h2>
-        <p>La sfortuna è dietro l'angolo, fai gli scongiuri e prosegui la tua discesa negli inferi</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-42>
-        <img src="img/42.svg" alt="">
-        <h2>Il senso della vita</h2>
-        <p>Una ricerca continua, un percorso lungo una vita. Forse il segreto sta proprio nel viaggio?</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-73>
-        <img src="img/73.png" alt="">
-        <h2>Sheldon Cooper</h2>
-        <p>Una serie di combinazioni, solamente un caso? O dietro il 73 si cela una verità più profonda?</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-101>
-        <img src="img/101.svg" alt="">
-        <h2>For beginners</h2>
-        <p>Chi ben comincia è a metà dell'opera, prosegui la strada per diventare un counter master</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-144>
-        <img src="img/144.svg" alt="">
-        <h2>Il quadrato perfetto</h2>
-        <p>La sequenza che ha incantato il mondo e che ha descritto l'armonia dell'universo</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-256>
-        <img src="img/256.svg" alt="">
-        <h2>Game over</h2>
-        <p>Tra fantasmini e palline gialle, il nostro eroe ha raggiunto il livello massimo del gioco. Non può andare oltre</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-777>
-        <img src="img/777.svg" alt="">
-        <h2>Una visione angelica</h2>
-        <p>777 è il numero degli angeli, la tua ascesa al regno della luce è sempre più vicina</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-934>
-        <img src="img/934.svg" alt="">
-        <h2>Harry Potter</h2>
-        <p>Il treno sta per partire, prendi i tuoi bagagli e corri verso un mondo magico</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-1234>
-        <img src="img/1234.svg" alt="">
-        <h2>Il pin del tuo telefono</h2>
-        <p>A volte la prigrizia ci è nemica, per questo scegliamo la strada più facile</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-2024>
-        <img src="img/1234.svg" alt="">
-        <h2>Vivi il presente</h2>
-        <p>Siamo troppo concentrati sul dove ci vediamo "tra 5 anni" che ci dimentichiamo del momento presente, che è
-            l'unica cosa che realmente abbiamo</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-8848>
-        <img src="img/8848.png" alt="">
-        <h2>In cima al mondo</h2>
-        <p>Quando vedi il mondo dalla cima poi rimani intrappolato, nulla ti sembrerà più lo stesso</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-21000000>
-        <img src="img/21000000.svg" alt="">
-        <h2>Risorsa finita</h2>
-        <p>Il limite tecnico è stato raggiunto, cosa succederà adesso?</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-88888888>
-        <img src="img/88888888.svg" alt="">
-        <h2>La fortuna sia con te</h2>
-        <p>Dopo questo grande viaggio hai raggiunto un livello di consapevolezza che ti rende immune ad ogni male</p>
-        <button class="continue-counting" continue-counting>Continua a contare</button>
-    </div>
-
-    <div class="popup" popup-99999999>
-        <img src="img/99999999.svg" alt="">
-        <h2>Lo zenit</h2>
-        <p>Complimenti! Hai raggiunto il livello massimo della bright side! Ora puoi esplorare la parte oscura, resetta
-            il contatore e conta all'indietro </p>
-        <button class="reset-counting" reset-counting>Prova la dark side</button>
-    </div>
 </body>
 
 </html>

@@ -2,7 +2,8 @@ const currentCounter = document.querySelector('[updated-counter]');
 const increaseButton = document.querySelector('[increase-button]');
 const decreaseButton = document.querySelector('[decrease-button]');
 let popup = document.querySelector('.popup')
-let popup42 = document.querySelector('[popup-42]')
+
+/* let popup42 = document.querySelector('[popup-42]')
 let popup73 = document.querySelector('[popup-73]')
 let popup101 = document.querySelector('[popup-101]')
 let popup144 = document.querySelector('[popup-144]')
@@ -47,13 +48,16 @@ let trophyMinus1984 = document.querySelector('[trophy-minus-1984]')
 let trophyMinus2020 = document.querySelector('[trophy-minus-2020]')
 let trophyMinus10920 = document.querySelector('[trophy-minus-10920]')
 let trophyMinus66000000 = document.querySelector('[trophy-minus-66000000]')
-let trophyMinus99999999 = document.querySelector('[trophy-minus-99999999]')
+let trophyMinus99999999 = document.querySelector('[trophy-minus-99999999]') */
 let brightTitle = document.querySelector('[bright-title]')
 let darkTitle = document.querySelector('[dark-title]')
 
 
-let counter = 0
-currentCounter.innerHTML = counter
+/* let counter = 0
+currentCounter.innerHTML = counter */
+
+
+
 
 function resizeDisplay() {
     const display = document.getElementById('display');
