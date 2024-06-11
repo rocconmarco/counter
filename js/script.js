@@ -52,10 +52,15 @@ let trophyMinus99999999 = document.querySelector('[trophy-minus-99999999]') */
 let brightTitle = document.querySelector('[bright-title]')
 let darkTitle = document.querySelector('[dark-title]')
 
+let counter = 0
+currentCounter.innerHTML = counter
 
-/* let counter = 0
-currentCounter.innerHTML = counter */
 
+document.addEventListener('DOMContentLoaded', () => {
+    createPopup(trophies);
+    createAchievedTrophies(trophies);
+    updateCounter();
+});
 
 
 
@@ -73,9 +78,9 @@ function resizeDisplay() {
 
 increaseButton.addEventListener('click', () => {
     if (counter < 99999999) {
-        counter++
+        /* counter++
         currentCounter.innerHTML = counter
-        resizeDisplay()
+        resizeDisplay() */
 
         switch (counter) {
             case 42:
@@ -139,9 +144,9 @@ increaseButton.addEventListener('click', () => {
 decreaseButton.addEventListener('click', () => {
     if (counter > -99999999) {
 
-        counter--
+        /* counter--
         currentCounter.innerHTML = counter
-        resizeDisplay()
+        resizeDisplay() */
 
         switch (counter) {
             case -13:
