@@ -8,7 +8,7 @@
 <h3 align="center">Count it up!</h3>
 
   <p align="center">
-    Comincia a contare, raggiungi gli obiettivi e impara nuove cose!
+    Comincia a contare, raggiungi gli obiettivi e scopri nuove curiosità!
     <br />
     <a href="https://github.com/rocconmarco"><strong>Repository GitHub »</strong></a>
     <br />
